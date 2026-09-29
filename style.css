@@ -327,9 +327,13 @@ h1 span { color: #858580; }
 }
 
 .text-link {
-  font-size: 13px;
-  border-bottom: 1px solid var(--text);
-  padding-bottom: 2px;
+    font-size: 13px;
+    border-bottom: 1px solid var(--text);
+    padding-bottom: 2px;
+    position: relative;
+    z-index: 10;
+    pointer-events: auto;
+    cursor: pointer;
 }
 
 .skills-grid {
