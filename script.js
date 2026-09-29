@@ -84,6 +84,8 @@ next.addEventListener("click", () => {
 });
 
 carousel.addEventListener("pointerdown", (event) => {
+  if (event.target.closest("a")) return;
+  
   dragging = true;
   dragMoved = false;
   startX = event.clientX;
